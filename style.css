@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fbffff;
+    color: #676767;
+    padding: 15px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #676767;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffc107;
+}
+
+.bio-picture {
+    position: absolute;
+
+}
+.bio-picture img{
+    max-width: 90%;
+    padding-left: 10%;
+}
+.bio-paragraph{
+    position: absolute;
+    max-width: 400px;
+    padding-top: 100px;
+
+}
+.bio-h {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.bio-p{
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-justify: inter-word;
+    text-align: justify;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    .bio{
+        display: block;
+        overflow: hidden;
+    }
+    .bio-picture {
+        position: relative;
+    }
+    .bio-picture img{
+        max-width: 700px;
+    }
+    
+    .bio-paragraph{
+        display: block;
+        max-width: 600px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+    }
+}
