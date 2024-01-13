@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    color: #030e12;
+    padding: 15px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #030e12;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffc107;
+}
+
+.bio-picture {
+    position: absolute;
+
+}
+.bio-picture img{
+    max-width: 90%;
+    padding-left: 10%;
+}
+.bio-paragraph{
+    position: absolute;
+    max-width: 400px;
+    padding-top: 100px;
+
+}
+.bio-h {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.bio-p{
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-justify: inter-word;
+    text-align: justify;
+
+}
+
+/*blogs styles*/
+.contain{
+    display: flex;
+    justify-content: space-between;
+}
+.left-div,
+.right-div,
+.gap {
+    box-sizing: border-box;
+}
+
+.left-div {
+    width: 65%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.gap {
+    width: 5%;
+}
+
+
+.right-div {
+    width: 30%;
+    background-color: #3686a0;
+    padding: 20px;
+    margin-top: 70px;
+}
+.blog-post{
+    background-color: #fcfafa;
+    margin-top: 50px;
+    padding: 20px;
+}
+.post-paragraph{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-justify: inter-word;
+    text-align: justify;
+}
+.post-image{
+    max-width: 700px;
+}
+.right-post{
+    border-bottom: 1px solid #fff;
+    border-radius: 1px;
+    padding-top: 40px;
+}
+.right-post h3{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #fff;
+}
+.right-post p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    }
+
+
+/*Projects styles*/
+.projects{
+    background-color: #3686a0;
+}
+
+.project-div {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 50px;
+}
+
+.child-div {
+    flex: 1;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #fff;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.child-div h1{
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.child-div p{
+    font-size: 0.9em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+.ITDev{
+    max-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    .bio{
+        display: block;
+        overflow: hidden;
+    }
+    .bio-picture {
+        position: relative;
+    }
+    .bio-picture img{
+        max-width: 700px;
+    }
+    
+    .bio-paragraph{
+        display: block;
+        max-width: 600px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+    }
+    .contain{
+        display: block;
+    }
+    .right-div{
+        display: none;
+        visibility: hidden;
+        max-width: 0;
+    }
+    .gap{
+        display: none;
+        visibility: hidden;
+    }
+    .left-div{
+        width: 100%;
+        overflow: hidden;
+    }
+}
